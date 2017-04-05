@@ -19,8 +19,13 @@
 	display: inline-block;
 	height: 1%;
 	width: 100%;
+}
+
+.header_banner {
+	height: 250px;
     background-image: url(../images/vineyard_sun.jpg);
 	background-size: cover;
+	margin-bottom: 0%;
 }
 
 #title {
@@ -71,7 +76,7 @@
 }
 
 .some-color{
-	background: lightgrey;
+    background: lightgrey;
 }
 
 #buzz{
@@ -89,6 +94,7 @@
 
 .img-circle{
 	padding: 5%;
+	max-width:300px;
 }
 
 .other-color{
@@ -115,7 +121,7 @@
 
 figure {
 	position: relative;
-	width: 350px;
+	width: 300px;
 	height: 200px;
 	margin: 0;
 	padding: 0;
