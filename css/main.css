@@ -96,6 +96,10 @@
 	padding-top: 3%;
 }
 
+#buzz h2{
+	font-size:40px;
+}
+
 .row {
 	padding-top: 10%;
 	padding-bottom: 12%;
@@ -119,4 +123,44 @@
 
 #about_us_titles {
 	padding-bottom: 5%;
+}
+ 
+
+figure {
+	position: relative;
+	width: 350px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: lightgrey;
+	overflow: hidden;
+}
+
+figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
 }
